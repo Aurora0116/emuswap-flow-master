@@ -1,0 +1,290 @@
+.swap-box {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 24px;
+    padding: 48px 32px 32px;
+    box-shadow: $shadow-main;
+    .swap-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 520px) {
+        max-width: calc(100% - 40px);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+.token-input {
+    padding: 12px 8px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin: 12px 0;
+    .token-input-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        span {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    .token-input-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        .form-control {
+            position: relative;
+            .btn-max {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        input {
+            font-size: 22px;
+            font-weight: 600;
+            color: $gray-default;
+            padding: 8px 70px 8px 8px;
+            border: none;
+            background: #fff;
+            border-radius: 6px;
+            font-weight: bold;
+            width: calc(100% - 10px);
+            outline: none;
+            &:focus {
+                background-color: #efefef;
+            }
+        }
+        .token-handler {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 6px;
+            border: none;
+            border-radius: 8px;
+            background-color: transparent;
+            transition: all 0.3s;
+            width: 128px;
+            &:hover {
+                background-color: #efefef;
+            }
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 6px;
+                margin-right: 6px;
+            }
+            img {
+                width: 28px;
+                height: 28px;
+                border-radius: 28px;
+            }
+        }
+    }
+}
+
+.MuiDialog-paperScrollPaper {
+    border-radius: 20px !important;
+    max-width: 480px !important;
+    width: 480px !important;
+    box-shadow: $shadow-main !important;
+    padding: 0 !important;
+    position: relative;
+    .markets-modal {
+        border-radius: 24px;
+        .modal-header {
+            padding: 28px 28px 16px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            h3 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .btn-close {
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                right: 20px;
+                top: 20px;
+            }
+        }
+    }
+}
+.tokenname-input {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: $gray-default;
+    border-radius: 8px;
+    border: 1px solid #5d72d1;
+    background: #eaf2ff;
+    outline: none;
+    font-weight: 700;
+}
+.common-bases {
+    margin-top: 24px;
+    p {
+        font-size: 12px;
+        margin: 12px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $gray-second;
+    }
+    .common-bases-content {
+        display: flex;
+    }
+}
+.btn-token {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 2px 6px;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.3s;
+    .token-icon {
+        border-radius: 50%;
+    }
+    span {
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    &:hover {
+        background-color: #efefef;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.default-tokens {
+    padding: 28px;
+}
+.tokens-lists {
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        margin-left: 30px;
+    }
+    .token-item {
+        margin: 0 0;
+        padding: 16px 28px;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        transition: all 0.3s;
+        &:hover {
+            cursor: pointer;
+            background: #efefef;
+        }
+    }
+}
+.token-items {
+    min-height: 370px;
+    overflow-y: auto;
+    padding-bottom: 28px;
+    border-top: 1px solid #ddd;
+}
+.token-item-name {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .token-icon {
+        border-radius: 50%;
+    }
+    span {
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 5px;
+        color: $gray-second;
+    }
+}
+.btn-replace {
+    border: none;
+    background-color: transparent;
+    &:hover {
+        svg {
+            fill: $primary-color;
+        }
+    }
+}
+.table-container {
+    padding: 32px 0;
+    box-shadow: $shadow-main;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+.list-table {
+    width: 100%;
+    border-radius: 24px;
+    border-collapse: collapse;
+    th {
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+        padding: 10px 0;
+        color: $gray-second;
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:last-child {
+            padding-right: 20px;
+        }
+    }
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    tbody {
+        tr {
+            transition: all 0.3s;
+            td {
+                border-bottom: 1px solid #eee;
+                &:first-child {
+                    padding-left: 20px;
+                }
+                &:last-child {
+                    padding-right: 20px;
+                }
+                span {
+                    font-weight: 600;
+                }
+            }
+            &:hover {
+                background-color: #efefef;
+            }
+        }
+    }
+}
+
+.pair-item {
+    display: flex;
+    align-items: center;
+    .pair-token-icon {
+        border-radius: 50%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .pair-token-names {
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}

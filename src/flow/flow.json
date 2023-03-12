@@ -1,0 +1,33 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"contracts": {
+		"sFlowToken4": "./sFlowToken.cdc",
+		"sFlowStakingManager18": "./sFlowStakingManager.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "d2f9a7a582dc26ff0d05c79946828a31ecd99211674e32d8c6e48ec32ae5c7d8"
+		},
+		"testnet-account": {
+			"address": "0x44886dbbf20e893c",
+			"key": "784bf71b737be0b49652030fcaa78369a60df6fbed57d5e0fbef57aa631e3ec8"
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"testnet-account": [{"name": "sFlowStakingManager18", "args": [{"type": "String", "value": "4d617820576f6c74657200ff6e729e24d35ee1aa0a76bc05746f8c99879e8eaf"}, {"type": "UInt32", "value": "1"
+				}]}]
+		}
+	}
+}

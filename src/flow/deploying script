@@ -1,0 +1,2 @@
+flow accounts add-contract sFlowToken4 ./sFlowToken.cdc --signer testnet-account --network testnet
+flow accounts add-contract sFlowStakingManager18 ./sFlowStakingManager.cdc --signer testnet-account --network testnet
